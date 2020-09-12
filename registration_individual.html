@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <title>Individual Registration - Virtual Plasma Bank</title>
+        <!-- <link rel="stylesheet" type="text/css" href="stylesheet.css"> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <style>
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+            }
+            .jumbotron{
+               margin-top:20px;
+               /* height: 40px;
+               
+               padding-top: 10px;
+               color: white;
+               border-radius: 0px;
+               background-color: black; */
+            }
+            /* h1{
+                margin-left: -950px;
+            } */
+            .c1{
+                border: 1px solid rgba(0, 0, 0, 0.219);
+                padding: 20px;
+                margin-top: 50px;
+                border-radius: 5px;
+            }
+            .c1:hover{
+                box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.521);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="Header" id="individualRegistrationHeader">
+            <h1>Individual Registration Form</h1>
+        </div> -->
+        <!-- <hr> -->
+        <!-- <div class="jumbotron text-center"><h1>Individual Registration Form</h1></div>
+        <nav class="Footer" id=individualRegistrationFooter>
+            <a href="index.html"><div class="button">Home</div></a>
+            <a href="about.html"><div class="button">Contact</div></a>
+            <a href="diagnosis.html"><div class="button">Diagnosis</div></a>
+        </nav> -->
+
+
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="navbar-brand"><h1><I>PlasmaBank</I></h1></div>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item">
+                  <a class="nav-link"  href="index.html">Welcome</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="diagnosis.html">Diagonsis</a>
+                </li> -->
+                
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
+
+
+
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom:-30px;margin-top: 20px;">Individual Registration Form</h2>
+            <div class="col-lg-6 m-auto d-block">
+                <div class="c1">
+        <form action="" target="_self" autocomplete="on" >
+            <div class="form-group">
+                <lable for="fname">First Name : </lable> <br>
+                <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required autofocus> 
+            </div>
+            <div class="form-group">
+                <lable for="lname">Last Name : </lable> <br>
+            <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name" required> 
+            </div>
+            <div class="form-group">
+                <lable for="age">Age : </lable> <br>
+            <input type="number" class="form-control" id="age" name="age" placeholder="Age" min="18" max="65" value="18" required> 
+            </div>
+            
+            <div class="form-group">
+                <label> Gender : </label> <br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label> 
+            </div>
+            
+            <div class="form-group">
+                <lable for="email">Email Address : </lable> <br>
+            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail"> 
+            </div>
+            
+            <div class="form-group">
+                <lable for="phone">Phone No. : </lable> <br>
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone No." pattern="[0-9]{10}" required> 
+            </div>
+            
+            <div class="form-group">
+                <label>Address : </label> <br>
+                <input type="text" class="form-control" id="address1" name="address1" placeholder="Address Line 1" required> 
+                <input type="text" class="form-control" id="address2" name="address2" placeholder="Address Line 2" required> 
+                <input type="text" class="form-control" id="addressCity" name="addressCity" placeholder="City" required> 
+                <input type="text" class="form-control" id="addressState" name="addressState" placeholder="State" required> 
+                <input type="text" class="form-control" id="addressPIN" name="addressPIN" placeholder="PIN CODE" patters="[0-9]{6}" required> 
+            </div>
+            
+            <div class="form-group">
+                <label for="bloodGroup" required> Blood Group :</label> <br>
+                <select class="form-control"id="bloodGroup" name="bloodGroup">
+                    <option value = "A">  A</option>
+                    <option value = "B">  B</option>
+                    <option value = "AB"> AB</option>
+                    <option value = "O">  O</option>
+                </select> 
+            </div>
+            
+            <div class="form-group">
+                <label for="medicalHistory">Medical History : </label> <br>
+                <textarea id="medicalHistory"class="form-control" name="medicalHistory" placeholder="Medical History" rows="5" cols="30"></textarea> 
+            </div>
+            
+
+            <input type="submit" class="btn btn-primary" value="Submit" onclick="window.location.href='home.html'"> <br>
+        </form>
+</div>
+</div>
+</div>
+<div class="jumbotron text-center">Footer</div>
+        <!-- <hr> -->
+        <!-- <nav class="Footer" id=individualRegistrationFooter>
+            <a href="index.html"><div class="button">Home</div></a>
+            <a href="about.html"><div class="button">Contact</div></a>
+            <a href="diagnosis.html"><div class="button">Diagnosis</div></a>
+        </nav> -->
+    </body>
+</html>
